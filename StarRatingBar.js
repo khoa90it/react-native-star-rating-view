@@ -120,7 +120,7 @@ export default class StarRatingBar extends Component {
             starWidth = starStyle.width;
         }
         let starViewWidth = (starWidth + spacing) * maximumValue - spacing;
-        return <View style={styles.startList}>
+        return <View style={[this.props.style,styles.startList]}>
             <View style={{width: starViewWidth, overflow: 'hidden'}}>
                 <StarRatingView
                     starStyle={this.props.starStyle}
